@@ -1,0 +1,9 @@
+@import '../../../common/styles/styles.scss';
+
+.content {
+    @include container;
+    
+    .main {
+        grid-column: 2/5;
+    }
+}
