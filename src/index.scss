@@ -1,0 +1,18 @@
+@import './common/styles/styles.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  color: var(--font-color);
+}
+
+input {
+  color: var(--font-color);
+  font-size: 1rem;
+}

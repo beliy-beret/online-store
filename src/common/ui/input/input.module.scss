@@ -11,12 +11,12 @@
         bottom: 5px;
         &.search {            
             left: 5px;
-            top: 2px;
+            top: 10%;
             cursor: pointer;
         }
         &.optic, &.delete {            
             right: 5px;
-            top: 2px;
+            top: 10%;
             cursor: pointer;
         }
         
@@ -34,11 +34,7 @@
         border-radius: 2px;
         border: 1px solid #4C4C4C;
         padding: 6px 30px 6px 12px;
-        
-        &:focus {
-            border: 2px solid var(--color-info-700, #2F68CC);
-            outline: var(--color-info-700, #2F68CC);            
-        }
+        border-radius: 5px;
 
         &[type="search"] {
             padding-inline: 30px;
@@ -51,8 +47,8 @@
         }        
         
         &.error {
-            border-color: var(--color-danger-300, #F23D61);
-            outline: var(--color-danger-300, #F23D61);
+            border-color: #F23D61;
+            outline: #F23D61;
         }
     }
     

@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header className={style.header}>
       <div className={style.content}>
-        <LogoIcon width={120} fill="#FFF" />
+        <LogoIcon width={120} />
         <UserAva src={avatarSrc} />
         <Input type="search" />
         <BasketIcon width={25} className={style.basket} />

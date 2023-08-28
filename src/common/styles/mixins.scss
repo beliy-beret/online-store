@@ -1,6 +1,24 @@
 @mixin container {
-    max-width: 1980px;
+    max-width: 1280px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-inline: 1rem;
+    margin-inline: auto;
+}
+
+@mixin block-shadow {
+    box-shadow: 0px 0px 10px 0px var(--font-color);
+}
+
+@mixin block {
+    @include block-shadow;
+    background-color: var(--block-bg);
+    border-radius: 10px;    
+    padding: 1rem;
+}
+
+@mixin link-btn {
+    border-radius: 5px;
+    background-color: var(--btn-bg);
+    padding: 0.5rem 1.2rem;    
 }
