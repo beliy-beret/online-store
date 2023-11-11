@@ -1,17 +1,12 @@
-import { AUTH } from 'app/paths'
-import { Navigate, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { store } from 'app/model/store'
 
 const App = () => {
-  const isLogged = true
-
-  if (!isLogged) {
-    return <Navigate to={AUTH} />
-  }
-
   return (
-    <>
+    <Provider store={store}>
       <Outlet />
-    </>
+    </Provider>
   )
 }
 

@@ -8,7 +8,11 @@ export type UserAvaProps = {
   src: string
 }
 
-export const UserAva: FC<UserAvaProps> = ({ src, size = 'small', variant = 'round' }) => {
+export const UserAva: FC<UserAvaProps> = ({
+  src,
+  size = 'small',
+  variant = 'round',
+}) => {
   return (
     <div className={`${css.userAva} ${css[size]} ${css[variant]}`}>
       <img src={src} alt="user avatar" />
