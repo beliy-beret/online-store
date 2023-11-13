@@ -1,0 +1,21 @@
+@import '~/common/styles/styles.scss';
+
+.section {
+    height: 100vh;
+    background: linear-gradient(90deg, var(--block-bg) 50%, #ffffff 50%);;    
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-inline: 2rem;
+    gap: 10%;
+    @media screen and (max-width: 480px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+        background: var(--block-bg);        
+    }
+}
+.greeting {
+    display: flex;
+    flex-direction: column;    
+}
